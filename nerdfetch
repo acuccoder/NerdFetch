@@ -8,11 +8,11 @@ version=8.4.2
 font=nerd
 distrotype=none
 osi=""
-ki=""
+ki="󰌽"
 ri="󰍛"
 pi="󰏔"
 ui="󰅶"
-ci=""
+ci="󰏘"
 
 case $1 in
 "-p")
@@ -359,7 +359,6 @@ c2="${reset}${yellow}"         # third color
 ## OUTPUT
 
 cat <<EOF
-
 ${c0}      ___     ${nc}${USER}${red}@${reset}${hn}${host}${reset} 
 ${c0}     (${c1}.. ${c0}\    ${lc}${osi}  ${ic}${os}${reset}
 ${c0}     (${c2}<> ${c0}|    ${lc}${ki}  ${ic}${kernel}${reset}
@@ -367,4 +366,5 @@ ${c0}    /${c1}/  \\ ${c0}\\   ${lc}${ri}  ${ic}${RAM}${memstat} ${mempercent}
 ${c0}   ( ${c1}|  | ${c0}/|  ${lc}${pi}  ${ic}${packages} (${manager})${reset}
 ${c2}  _${c0}/\\ ${c1}__)${c0}/${c2}_${c0})  ${lc}${ui}  ${ic}${uptime}${reset}
 ${c2}  \/${c0}-____${c2}\/${reset}   ${lc}${ci}  ${red}███${green}███${yellow}███${blue}███${magenta}███${cyan}███${reset}
+
 EOF
